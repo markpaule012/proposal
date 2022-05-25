@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <title>Proposal</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=1024">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
     <link href="css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="css/font-awesome.min.css">
@@ -33,6 +33,13 @@
         -webkit-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%); background-color: #000000; color: #d8d8d8; font-size: 3rem"><i
                 class="fa fa-angle-right" ></i></i>
+        </button>
+
+        <button id="div_2_hello_btn" type="button" class="btn btn-secondary" style="position: absolute;
+        left: 50%;
+        top: 80%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%); background-color: #000000; color: #d8d8d8; font-size: 3rem; display: none;">Yes
         </button>
     </div>
 
@@ -82,7 +89,7 @@
             "Thank you Gladys",
             "for putting up with me",
             "all this time.",
-            "youre the best thing",
+            "you're the best thing",
             "that ever happened to me",
             "(and still happening to me)",
 
@@ -121,9 +128,14 @@
                         $('#div_1_hello')
                             .velocity("fadeIn", {
                                 duration: 1500, complete: function () {
-                                    $('#div_1_hello_btn')
-                                        .velocity("fadeIn", { duration: 300 });
-                                        $( "#div_1_hello_btn" ).prop( "disabled", false );
+                                    if (x < scriptList.length) {
+                                        $('#div_1_hello_btn')
+                                            .velocity("fadeIn", { duration: 300 });
+                                            $( "#div_1_hello_btn" ).prop( "disabled", false );
+                                    } else {
+                                        $('#div_2_hello_btn')
+                                            .velocity("fadeIn", { duration: 300 });
+                                    }
                                 }
                             });
                     }
