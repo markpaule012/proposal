@@ -125,6 +125,7 @@
                     duration: 1500, complete: function () {
                         $('#text1').html(scriptList[x]);
                         x++;
+                        document.getElementById("div_1_hello").style.transform = "translate(-50%, -50%)";
                         $('#div_1_hello')
                             .velocity("fadeIn", {
                                 duration: 1500, complete: function () {
