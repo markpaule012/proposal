@@ -35,6 +35,11 @@
         </button>
     </div>
 
+    <audio id="audio_1" controls loop autoplay>
+        <source src="music/The_Place_Where_Wishes_Come_True.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
@@ -87,7 +92,25 @@
 
         x=0;
 
+        var audio = document.getElementById('audio_1');
+        audio.addEventListener('ended', function() {
+            loop();
+        }, false);
+
+        function loop() {
+        audio.currentTime = 0; //rewind audio track to the beginning
+        audio.play(); // play it
+        }
+
+        //also manually trigger play when it is able to play ie. when files is loaded sufficiently for playing
+        audio.addEventListener('canplay', function() {
+        audio.play(); // play it
+        }, false);
+
         $('#div_1_hello_btn').on('click', function (e) {
+            audio.play(); // pl
+
+
             $( "#div_1_hello_btn" ).prop( "disabled", true );
             $('#div_1_hello')
                 .velocity("fadeOut", {
