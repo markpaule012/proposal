@@ -1,0 +1,1030 @@
+<!DOCTYPE html>
+<html >
+<head>
+	<meta charset="UTF-8">
+	<title>L3L Fantasy</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+	<link rel="stylesheet" href="css/rStyle.css">
+	<link href="assets/animate.css" rel="stylesheet">
+	<link href="assets/style.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+</head>
+<body>
+	<div id = "wrapper">
+		<div id = "l3row" class = "dynamic" >
+			<div id = "domain1"><div id = "team1"><?php echo $domains[1]['domain_name']; ?></div></div>
+			<div id = "domain2" class='spotlight'></div>
+			<div id="date">May 2, 2019</div>
+			<div id="domainleader"></div>
+			<div class = "l3lContainer"><div id="l3l"></div></div>
+			<div id = "box1">
+				<div id = "box1Pic"></div>
+				<div class = "namebar">
+					<div class="box1TopFirstContainer namebar1"><div id = "box1TopFirst"></div></div>
+					<div class="box1TopLastContainer namebar2"><div id = "box1TopLast"></div></div>
+				</div>
+				<div class="box1TopScoreContainer score"><div id = "box1TopScore"></div></div>
+				<div class="runnerup">
+					<div class="box1Runner1Container runner1"><div id = "box1Runner1" ></div></div>
+					<div class="box1Runner1ScoreContainer score1"><div id = "box1Runner1Score"></div></div>
+				</div>
+				<div class = "runnerup2">
+					<div class="box1Runner2Container runner2"><div id = "box1Runner2" class="runner2"></div></div> 
+					<div class="box1Runner2ScoreContainer score1"><div id = "box1Runner2Score"></div></div>
+				</div>
+			</div>
+			<div id = "box2">
+				<div id = "box2Pic"></div>
+				<div class = "namebar">
+					<div class="box2TopFirstContainer namebar1"><div id = "box2TopFirst"></div></div>
+					<div class="box2TopLastContainer namebar2"><div id = "box2TopLast"></div></div>
+				</div>
+				<div class="box2TopScoreContainer score"><div id = "box2TopScore"></div></div>
+				<div class="runnerup">
+					<div class="box2Runner1Container runner1"><div id = "box2Runner1" ></div></div>
+					<div class="box2Runner1ScoreContainer score1"><div id = "box2Runner1Score"></div></div>
+				</div>
+				<div class = "runnerup2">
+					<div class="box2Runner2Container runner2"><div id = "box2Runner2" class="runner2"></div></div> 
+					<div class="box2Runner2ScoreContainer score1"><div id = "box2Runner2Score"></div></div>
+				</div>
+			</div>
+			<div id = "box3">
+				<div id = "box3Pic"></div>
+				<div class = "namebar">
+					<div class="box3TopFirstContainer namebar1"><div id = "box3TopFirst"></div></div>
+					<div class="box3TopLastContainer namebar2"><div id = "box3TopLast"></div></div>
+				</div>
+				<div class="box3TopScoreContainer score"><div id = "box3TopScore"></div></div>
+				<div class="runnerup">
+					<div class="box3Runner1Container runner1"><div id = "box3Runner1" ></div></div>
+					<div class="box3Runner1ScoreContainer score1"><div id = "box3Runner1Score"></div></div>
+				</div>
+				<div class = "runnerup2">
+					<div class="box3Runner2Container runner2"><div id = "box3Runner2" class="runner2"></div></div> 
+					<div class="box3Runner2ScoreContainer score1"><div id = "box3Runner2Score"></div></div>
+				</div>
+			</div>
+			<div id = "box4">
+				<div id = "box4Pic"></div>
+				<div class = "namebar">
+					<div class="box4TopFirstContainer namebar1"><div id = "box4TopFirst"></div></div>
+					<div class="box4TopLastContainer namebar2"><div id = "box4TopLast"></div></div>
+				</div>
+				<div class="box4TopScoreContainer score"><div id = "box4TopScore"></div></div>
+				<div class="runnerup">
+					<div class="box4Runner1Container runner1"><div id = "box4Runner1" ></div></div>
+					<div class="box4Runner1ScoreContainer score1"><div id = "box4Runner1Score"></div></div>
+				</div>
+				<div class = "runnerup2">
+					<div class="box4Runner2Container runner2"><div id = "box4Runner2" class="runner2"></div></div> 
+					<div class="box4Runner2ScoreContainer score1"><div id = "box4Runner2Score"></div></div>
+				</div>
+			</div>
+			<div id = "box5">
+				<div id = "box5Pic"></div>
+				<div class = "namebar">
+					<div class="box5TopFirstContainer namebar1"><div id = "box5TopFirst"></div></div>
+					<div class="box5TopLastContainer namebar2"><div id = "box5TopLast"></div></div>
+				</div>
+				<div class="box5TopScoreContainer score"><div id = "box5TopScore"></div></div>
+				<div class="runnerup">
+					<div class="box5Runner1Container runner1"><div id = "box5Runner1" ></div></div>
+					<div class="box5Runner1ScoreContainer score1"><div id = "box5Runner1Score"></div></div>
+				</div>
+				<div class = "runnerup2">
+					<div class="box5Runner2Container runner2"><div id = "box5Runner2" class="runner2"></div></div> 
+					<div class="box5Runner2ScoreContainer score1"><div id = "box5Runner2Score"></div></div>
+				</div>
+			</div>
+		</div>
+		<div id = "bubbles1"></div>
+		<div id = "bubbles2"></div>
+		<div id = "bubbles3"></div>
+		<div id = "bubbles4"></div>
+		<div id = "bubbles5"></div>
+		<div id = "bubbles6"></div>
+		<div id = "bubbles7"></div>
+		<div id = "bubbles8"></div>
+		<div id = "bubbles9"></div>
+		<div id = "bubbles10"></div>
+		<div id = "next"></div>
+		<div id = "prev"></div>
+	</div>
+	
+	<!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.js"></script>
+	<script type="text/javascript" src="js/velocity.min.js"></script>
+	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="js/jquery.flip.js"></script>
+	<script type="text/javascript" src="assets/jquery.fittext.js"></script>
+	<script type="text/javascript" src="assets/jquery.lettering.js"></script>
+	<script type="text/javascript" src="js/jquery.textillate.js"></script>
+		<script>
+			$( document ).ready(function() {
+			
+			
+			
+				/* Get data from db */
+				getData();
+			
+				/* Trigger BG Bubble animations */
+				bubbles1();
+				bubbles2();
+				bubbles3();
+				bubbles4();
+				bubbles5();
+				bubbles6();
+				bubbles7();
+				bubbles8();
+				bubbles9();
+				bubbles10();
+				
+				
+				/* Inital values for animations */
+				$('#next').fadeOut();
+				$('#prev').fadeOut();
+				currentTeam = 0;
+				interval = 800;
+
+		
+				/* 
+					Test Animation using Textillate.js
+					Refer to: https://github.com/jschr/textillate
+				*/
+				
+				// ** Box 1 Initialization **
+				$('.box1TopFirstContainer').textillate({ in: { effect: 'flip', sync: false}, out: { effect: 'fadeOutDown', sync: true} ,  autoStart: false, loop: true});
+				$('.box1TopLastContainer').textillate({ in: { effect: 'fadeIn', sync: false}, out: { effect: 'fadeOutDown', sync: true}, autoStart: false, loop: true});
+				$('.box1TopScoreContainer').textillate({ in: { effect: 'fadeIn', sync: true}, out: { effect: 'fadeOutDown', sync: true}, autoStart: false, loop: true});
+				$('.box1Runner1Container').textillate({ in: { effect: 'fadeInDown' , sync: true}, out: { effect: 'fadeOutDown', sync: true}, autoStart: false, loop: true});
+				$('.box1Runner2Container').textillate({ in: { effect: 'fadeInDown' , sync: true}, out: { effect: 'fadeOutDown', sync: true}, autoStart: false, loop: true});
+				$('.box1Runner1ScoreContainer').textillate({ in: { effect: 'fadeInDown' , sync: true}, out: { effect: 'fadeOutDown', sync: true}, autoStart: false, loop: true});
+				$('.box1Runner2ScoreContainer').textillate({ in: { effect: 'fadeInDown' , sync: true}, out: { effect: 'fadeOutDown', sync: true}, autoStart: false, loop: true});
+				
+				$('.box2TopFirstContainer').textillate({ in: { effect: 'flip', sync: false}, out: { effect: 'fadeOutDown', sync: true}, autoStart: false, loop: true});
+				$('.box2TopLastContainer').textillate({ in: { effect: 'fadeIn', sync: false}, out: { effect: 'fadeOutDown', sync: true}, autoStart: false, loop: true});
+				$('.box2TopScoreContainer').textillate({ in: { effect: 'fadeIn', sync: true}, out: { effect: 'fadeOutDown', sync: true}, autoStart: false, loop: true});
+				$('.box2Runner1Container').textillate({ in: { effect: 'fadeInDown' , sync: true}, out: { effect: 'fadeOutDown', sync: true}, autoStart: false, loop: true});
+				$('.box2Runner2Container').textillate({ in: { effect: 'fadeInDown' , sync: true}, out: { effect: 'fadeOutDown', sync: true}, autoStart: false, loop: true});
+				$('.box2Runner1ScoreContainer').textillate({ in: { effect: 'fadeInDown' , sync: true}, out: { effect: 'fadeOutDown', sync: true}, autoStart: false, loop: true});
+				$('.box2Runner2ScoreContainer').textillate({ in: { effect: 'fadeInDown' , sync: true}, out: { effect: 'fadeOutDown', sync: true}, autoStart: false, loop: true});
+				
+				$('.box3TopFirstContainer').textillate({ in: { effect: 'flip', sync: false}, out: { effect: 'fadeOutDown', sync: true}, autoStart: false, loop: true});
+				$('.box3TopLastContainer').textillate({ in: { effect: 'fadeIn', sync: false}, out: { effect: 'fadeOutDown', sync: true}, autoStart: false, loop: true});
+				$('.box3Runner1Container').textillate({ in: { effect: 'fadeInDown' , sync: true}, out: { effect: 'fadeOutDown', sync: true}, autoStart: false, loop: true});
+				$('.box3TopScoreContainer').textillate({ in: { effect: 'fadeIn', sync: true}, out: { effect: 'fadeOutDown', sync: true}, autoStart: false, loop: true});
+				$('.box3Runner2Container').textillate({ in: { effect: 'fadeInDown' , sync: true},  out: { effect: 'fadeOutDown', sync: true}, autoStart: false, loop: true});
+				$('.box3Runner1ScoreContainer').textillate({ in: { effect: 'fadeInDown' , sync: true}, out: { effect: 'fadeOutDown', sync: true}, autoStart: false, loop: true});
+				$('.box3Runner2ScoreContainer').textillate({ in: { effect: 'fadeInDown' , sync: true}, out: { effect: 'fadeOutDown', sync: true}, autoStart: false, loop: true});
+
+				$('.box4TopFirstContainer').textillate({ in: { effect: 'flip', sync: false}, out: { effect: 'fadeOutDown', sync: true}, autoStart: false, loop: true});
+				$('.box4Runner1Container').textillate({ in: { effect: 'fadeInDown' , sync: true}, out: { effect: 'fadeOutDown', sync: true}, autoStart: false, loop: true});
+				$('.box4TopLastContainer').textillate({ in: { effect: 'fadeIn', sync: false}, out: { effect: 'fadeOutDown', sync: true}, autoStart: false, loop: true});
+				$('.box4Runner2Container').textillate({ in: { effect: 'fadeInDown' , sync: true}, out: { effect: 'fadeOutDown', sync: true}, autoStart: false, loop: true});
+				$('.box4TopScoreContainer').textillate({ in: { effect: 'fadeIn', sync: true}, out: { effect: 'fadeOutDown', sync: true}, autoStart: false, loop: true});
+				$('.box4Runner1ScoreContainer').textillate({ in: { effect: 'fadeInDown' , sync: true}, out: { effect: 'fadeOutDown', sync: true}, autoStart: false, loop: true});
+				$('.box4Runner2ScoreContainer').textillate({ in: { effect: 'fadeInDown' , sync: true}, out: { effect: 'fadeOutDown', sync: true}, autoStart: false, loop: true});
+
+				$('.box5TopFirstContainer').textillate({ in: { effect: 'flip', sync: false}, out: { effect: 'fadeOutDown', sync: true}, autoStart: false, loop: true});
+				$('.box5Runner1Container').textillate({ in: { effect: 'fadeInDown' , sync: true}, out: { effect: 'fadeOutDown', sync: true}, autoStart: false, loop: true});
+				$('.box5TopLastContainer').textillate({ in: { effect: 'fadeIn', sync: false}, out: { effect: 'fadeOutDown', sync: true}, autoStart: false, loop: true});
+				$('.box5TopScoreContainer').textillate({ in: { effect: 'fadeIn', sync: true}, out: { effect: 'fadeOutDown', sync: true}, autoStart: false, loop: true});
+				$('.box5Runner2Container').textillate({ in: { effect: 'fadeInDown' , sync: true}, out: { effect: 'fadeOutDown', sync: true}, autoStart: false, loop: true});
+				$('.box5Runner1ScoreContainer').textillate({ in: { effect: 'fadeInDown' , sync: true}, out: { effect: 'fadeOutDown', sync: true}, autoStart: false, loop: true});
+				$('.box5Runner2ScoreContainer').textillate({ in: { effect: 'fadeInDown' , sync: true}, out: { effect: 'fadeOutDown', sync: true}, autoStart: false, loop: true});
+				
+				// ** Box 1 Out **
+				//$('.box1TopFirstContainer').textillate({ out: { effect: 'fadeOutDown', sync: true}, autoStart: false, loop: true});
+				//$('.box1TopLastContainer').textillate({ out: { effect: 'fadeOutDown', sync: true}, autoStart: false, loop: true});
+				//$('.box1TopScoreContainer').textillate({ out: { effect: 'fadeOutDown', sync: true}, autoStart: false, loop: true});
+				//$('.box1Runner1Container').textillate({ out: { effect: 'fadeOutDown' , sync: true}, autoStart: false, loop: true});
+				//$('.box1Runner2Container').textillate({ out: { effect: 'fadeOutDown' , sync: true}, autoStart: false, loop: true});
+				//$('.box1Runner1ScoreContainer').textillate({ out: { effect: 'fadeOutDown' , sync: true}, autoStart: false, loop: true});
+				//$('.box1Runner2ScoreContainer').textillate({ out: { effect: 'fadeOutDown' , sync: true}, autoStart: false, loop: true});
+				
+				$('#domain1').textillate({ in: { effect: 'fadeInLeftBig', sync: false}, out: { effect: 'fadeOutRight', sync: true}, autoStart: false, loop: true});
+				
+				
+				/* Trigger L3L Logo animation*/
+				logol3l();
+				
+				/* 
+					Temp code to fix bug on first load 
+					This is needed to initialize the loading of boxes.
+				*/
+				box1In();
+				box2In();
+				box3In();
+				box4In();
+				box5In();
+				
+				/*
+					Run loop here
+				*/
+				refresh();
+				loop();
+			});
+			
+			var start=0;
+			var interval2 = 8000;
+			var mainLoop;
+			/* 
+				Main loop of the program
+			*/
+			function loop(){
+				mainLoop = setTimeout(function(){
+					if (start == 1){
+						if(currentTeam < teamCount - 1){
+							currentTeam++;
+						}else{
+							currentTeam = 0;
+						}
+						refresh();
+						animateIn();
+						start =0;
+						interval2 = 8000;
+					}else{
+						animateOut();
+						start=1;
+						interval2 = 1600;
+					}
+					loop();
+				}, interval2); 
+			}
+			
+
+				$( "#prev" ).click(function() {
+					prevClicked();
+				});
+				
+				$('#next').on('click', function () {
+					nextClicked();
+				});		
+
+			
+			
+			/* 
+				Special code for next and prev button 
+				Refer to the ff sites:
+					http://stackoverflow.com/questions/1565463/jquery-how-to-make-something-fade-out-when-mouse-is-idle-when-mouse-moves-agai
+					http://stackoverflow.com/questions/8981463/detect-if-hovering-over-element-with-jquery			
+			*/
+			var timer;
+			$(document).mousemove(function() {
+				if (timer) {
+					clearTimeout(timer);
+					timer = 0;
+				}
+				$('#next').fadeIn();
+				$('#prev').fadeIn();
+				timer = setTimeout(function() {
+					// Dont hide if mouse is hovered on button
+					var isHovered1 = false;
+					var isHovered2 = false;
+					isHovered1 = $('#next').is(":hover");
+					isHovered2 = $('#prev').is(":hover");
+					if (isHovered1 == false && isHovered2 == false){
+						$('#next').fadeOut();
+						$('#prev').fadeOut();
+					}
+				}, 500)
+			})
+			
+			
+			/* ****** All global variables must be declared on this part */
+			
+			var currentTeam;
+			var teamCount;
+			var globalTimer;
+			
+			
+			// Team Arrays
+			var domain;
+			
+			var box1TopFirst;
+			var box1TopLast;
+			var box1Runner1;
+			var box1Runner2;
+			var box1TopScore;
+			var box1Runner1Score;
+			var box1Runner2Score;
+			var box1Pic;
+			var box1PicWidth;
+			var box1PicHeight;
+
+			
+			var box2TopFirst;
+			var box2TopLast;
+			var box2Runner1;
+			var box2Runner2;
+			var box2TopScore;
+			var box2Runner1Score;
+			var box2Runner2Score;
+			var box2Pic;
+			var box2PicWidth;
+			var box2PicHeight;
+			
+			var box3TopFirst;
+			var box3TopLast;
+			var box3Runner1;
+			var box3Runner2;
+			var box3TopScore;
+			var box3Runner1Score;
+			var box3Runner2Score;
+			var box3Pic;
+			var box3PicWidth;
+			var box3PicHeight;
+			
+			var box4TopFirst;
+			var box4TopLast;
+			var box4Runner1;
+			var box4Runner2;
+			var box4TopScore;
+			var box4Runner1Score;
+			var box4Runner2Score;
+			var box4Pic;
+			var box4PicWidth;
+			var box4PicHeight;
+			
+			var box5TopFirst;
+			var box5TopLast;
+			var box5Runner1;
+			var box5Runner2;
+			var box5TopScore;
+			var box5Runner1Score;
+			var box5Runner2Score;
+			var box5Pic;
+			var box5PicWidth;
+			var box5PicHeight;
+			/* ****** End of global variables declaration. */
+			
+			function nextClicked(){
+				clearTimeout( mainLoop );
+				loop();
+				if(currentTeam < teamCount - 1){
+					currentTeam++;
+					refresh();
+				}
+			}
+			
+			function prevClicked(){
+				clearTimeout( mainLoop );
+				loop();
+				if(currentTeam > 0){
+					currentTeam--;
+					refresh();
+				}
+			}
+			
+			function refresh(){
+				/* 
+					1. Change all pictures
+					2. Change all names
+					3. Change runners
+				*/
+				
+				
+				// *** Clear data ***
+				clearData();
+				
+				
+				// *** Stop all animations before changing the values ***
+				stopAnimation();
+				
+				// *** Change Domain ****
+				$('#team1').html(domain[currentTeam]);
+				$('#domain2').html(domain[currentTeam]);
+
+				
+				// *** Change Box 1 ****
+				$('#box1TopFirst').html(box1TopFirst[currentTeam]);
+				$('#box1TopLast').html(box1TopLast[currentTeam]);
+				$('#box1Runner1').html(box1Runner1[currentTeam]);
+				$('#box1Runner2').html(box1Runner2[currentTeam]);
+				$('#box1TopScore').html(box1TopScore[currentTeam]);
+				$('#box1Runner1Score').html(box1Runner1Score[currentTeam]);
+				$('#box1Runner2Score').html(box1Runner2Score[currentTeam]);
+				$('#box1Pic').css('background-image', box1Pic[currentTeam]);
+				$("#box1Pic").css("width", box1PicWidth[currentTeam]);
+				$("#box1Pic").css("height", box1PicHeight[currentTeam]);
+				$("#box1Pic").css("background-width", box1PicWidth[currentTeam]);
+				$("#box1Pic").css("background-height", box1PicHeight[currentTeam]);
+				$("#box1Pic").css("background-size", box1PicWidth[currentTeam] + " " + box1PicHeight[currentTeam]);
+
+
+
+				
+				// *** Change Box 2 ****
+				$('#box2TopFirst').html(box2TopFirst[currentTeam]);
+				$('#box2TopLast').html(box2TopLast[currentTeam]);
+				$('#box2Runner1').html(box2Runner1[currentTeam]);
+				$('#box2Runner2').html(box2Runner2[currentTeam]);
+				$('#box2TopScore').html(box2TopScore[currentTeam]);
+				$('#box2Runner1Score').html(box2Runner1Score[currentTeam]);
+				$('#box2Runner2Score').html(box2Runner2Score[currentTeam]);
+				$('#box2Pic').css('background-image', box2Pic[currentTeam]);
+				$("#box2Pic").css("width", box2PicWidth[currentTeam]);
+				$("#box2Pic").css("height", box2PicHeight[currentTeam]);
+				$("#box2Pic").css("background-size", box2PicWidth[currentTeam] + " " + box2PicHeight[currentTeam]);
+				
+				// *** Change Box 3 ****
+				$('#box3TopFirst').html(box3TopFirst[currentTeam]);
+				$('#box3TopLast').html(box3TopLast[currentTeam]);
+				$('#box3Runner1').html(box3Runner1[currentTeam]);
+				$('#box3Runner2').html(box3Runner2[currentTeam]);
+				$('#box3TopScore').html(box3TopScore[currentTeam]);
+				$('#box3Runner1Score').html(box3Runner1Score[currentTeam]);
+				$('#box3Runner2Score').html(box3Runner2Score[currentTeam]);
+				$('#box3Pic').css('background-image', box3Pic[currentTeam]);
+				$("#box3Pic").css("width", box3PicWidth[currentTeam]);
+				$("#box3Pic").css("height", box3PicHeight[currentTeam]);
+				$("#box3Pic").css("background-size", box3PicWidth[currentTeam] + " " + box3PicHeight[currentTeam]);
+			
+				
+				// *** Change Box 4 ****
+				$('#box4TopFirst').html(box4TopFirst[currentTeam]);
+				$('#box4TopLast').html(box4TopLast[currentTeam]);
+				$('#box4Runner1').html(box4Runner1[currentTeam]);
+				$('#box4Runner2').html(box4Runner2[currentTeam]);
+				$('#box4TopScore').html(box4TopScore[currentTeam]);
+				$('#box4Runner1Score').html(box4Runner1Score[currentTeam]);
+				$('#box4Runner2Score').html(box4Runner2Score[currentTeam]);
+				$('#box4Pic').css('background-image', box4Pic[currentTeam]);
+				$("#box4Pic").css("width", box4PicWidth[currentTeam]);
+				$("#box4Pic").css("height", box4PicHeight[currentTeam]);
+				$("#box4Pic").css("background-size", box4PicWidth[currentTeam] + " " + box4PicHeight[currentTeam]);
+				
+				// *** Change Box 5 ****
+				$('#box5TopFirst').html(box5TopFirst[currentTeam]);
+				$('#box5TopLast').html(box5TopLast[currentTeam]);
+				$('#box5Runner1').html(box5Runner1[currentTeam]);
+				$('#box5Runner2').html(box5Runner2[currentTeam]);
+				$('#box5TopScore').html(box5TopScore[currentTeam]);
+				$('#box5Runner1Score').html(box5Runner1Score[currentTeam]);
+				$('#box5Runner2Score').html(box5Runner2Score[currentTeam]);
+				$('#box5Pic').css('background-image', box5Pic[currentTeam]);
+				$("#box5Pic").css("width", box5PicWidth[currentTeam]);
+				$("#box5Pic").css("height", box5PicHeight[currentTeam]);
+				$("#box5Pic").css("background-size", box5PicWidth[currentTeam] + " " + box5PicHeight[currentTeam]);
+				
+				// *** Start all Animations ***/
+				animateIn();
+			}
+			
+			
+			/*********************************************** End Animations **********************************************************/
+			
+			function clearData(){
+				// *** Change Domain ****
+				$('#team1').html('');
+				$('#domain2').html('');
+
+
+				
+				// *** Change Box 1 ****
+				$('.box1TopFirstContainer').hide(); 
+				$('.box1TopLastContainer').hide(); 
+				$('.box1TopScoreContainer').hide(); 
+				$('.box1Runner1Container').hide(); 
+				$('.box1Runner2Container').hide(); 
+				$('.box1Runner1ScoreContainer').hide(); 
+				$('.box1Runner2ScoreContainer').hide(); 	
+
+
+				
+				// *** Change Box 2 ****
+				$('.box2TopFirstContainer').hide(); 
+				$('.box2TopLastContainer').hide(); 
+				$('.box2TopScoreContainer').hide(); 
+				$('.box2Runner1Container').hide(); 
+				$('.box2Runner2Container').hide(); 
+				$('.box2Runner1ScoreContainer').hide(); 
+				$('.box2Runner2ScoreContainer').hide(); 	
+				
+				// *** Change Box 3 ****
+				$('.box3TopFirstContainer').hide(); 
+				$('.box3TopLastContainer').hide(); 
+				$('.box3TopScoreContainer').hide(); 
+				$('.box3Runner1Container').hide(); 
+				$('.box3Runner2Container').hide(); 
+				$('.box3Runner1ScoreContainer').hide(); 
+				$('.box3Runner2ScoreContainer').hide(); 	
+			
+				
+				// *** Change Box 4 ****
+				$('.box4TopFirstContainer').hide(); 
+				$('.box4TopLastContainer').hide(); 
+				$('.box4TopScoreContainer').hide(); 
+				$('.box4Runner1Container').hide(); 
+				$('.box4Runner2Container').hide(); 
+				$('.box4Runner1ScoreContainer').hide(); 
+				$('.box4Runner2ScoreContainer').hide(); 	
+				
+				// *** Change Box 5 ****
+				$('.box5TopFirstContainer').hide(); 
+				$('.box5TopLastContainer').hide(); 
+				$('.box5TopScoreContainer').hide(); 
+				$('.box5Runner1Container').hide(); 
+				$('.box5Runner2Container').hide(); 
+				$('.box5Runner1ScoreContainer').hide(); 
+				$('.box5Runner2ScoreContainer').hide(); 	
+			}
+			
+			function stopAnimation(){
+			
+				clearTimeout( box1Ani );
+				clearTimeout( box2Ani );
+				clearTimeout( box3Ani );
+				clearTimeout( box4Ani );
+				clearTimeout( box5Ani );
+				
+				clearTimeout( box1AniOut );
+				clearTimeout( box2AniOut );
+				clearTimeout( box3AniOut );
+				clearTimeout( box4AniOut );
+				clearTimeout( box5AniOut );
+								
+			
+				$('#domain2').hide();
+				
+				$("#box1Pic").velocity("stop");
+				$("#box1Pic").velocity({opacity : "0"}, {duration : 0});;
+				$('#box1TopFirst').html('');
+				$('#box1TopLast').html('');
+				
+				$('.box1TopFirstContainer').textillate('stop'); 
+				$('.box1TopLastContainer').textillate('stop'); 
+				$('.box1TopScoreContainer').textillate('stop'); 
+				$('.box1Runner1Container').textillate('stop'); 
+				$('.box1Runner2Container').textillate('stop'); 
+				$('.box1Runner1ScoreContainer').textillate('stop'); 
+				$('.box1Runner2ScoreContainer').textillate('stop'); 	
+				
+
+				
+				$("#box2Pic").velocity("stop");
+				$("#box2Pic").velocity({opacity : "0"}, {duration : 0});;
+				$('#box2TopFirst').html('');
+				$('#box2TopLast').html('');
+				
+				$('.box2TopFirstContainer').textillate('stop'); 
+				$('.box2TopLastContainer').textillate('stop'); 
+				$('.box2TopScoreContainer').textillate('stop'); 
+				$('.box2Runner1Container').textillate('stop'); 
+				$('.box2Runner2Container').textillate('stop'); 
+				$('.box2Runner1ScoreContainer').textillate('stop'); 
+				$('.box2Runner2ScoreContainer').textillate('stop'); 	
+				
+				$("#box3Pic").velocity("stop");
+				$("#box3Pic").velocity({opacity : "0"}, {duration : 0});;
+				$('#box3TopFirst').html('');
+				$('#box3TopLast').html('');
+
+				$('.box3TopFirstContainer').textillate('stop'); 
+				$('.box3TopLastContainer').textillate('stop'); 
+				$('.box3TopScoreContainer').textillate('stop'); 
+				$('.box3Runner1Container').textillate('stop'); 
+				$('.box3Runner2Container').textillate('stop'); 
+				$('.box3Runner1ScoreContainer').textillate('stop'); 
+				$('.box3Runner2ScoreContainer').textillate('stop'); 	
+					
+				
+				$("#box4Pic").velocity("stop");
+				$("#box4Pic").velocity({opacity : "0"}, {duration : 0});;
+				$('#box4TopFirst').html('');
+				$('#box4TopLast').html('');
+				
+				
+				$('.box4TopFirstContainer').textillate('stop'); 
+				$('.box4TopLastContainer').textillate('stop'); 
+				$('.box4TopScoreContainer').textillate('stop'); 
+				$('.box4Runner1Container').textillate('stop'); 
+				$('.box4Runner2Container').textillate('stop'); 
+				$('.box4Runner1ScoreContainer').textillate('stop'); 
+				$('.box4Runner2ScoreContainer').textillate('stop'); 	
+				
+				$("#box5Pic").velocity("stop");
+				$("#box5Pic").velocity({opacity : "0"}, {duration : 0});;
+				$('#box5TopFirst').html('');
+				$('#box5TopLast').html('');
+				
+				
+				$('.box5TopFirstContainer').textillate('stop'); 
+				$('.box5TopLastContainer').textillate('stop'); 
+				$('.box5TopScoreContainer').textillate('stop'); 
+				$('.box5Runner1Container').textillate('stop'); 
+				$('.box5Runner2Container').textillate('stop'); 
+				$('.box5Runner1ScoreContainer').textillate('stop'); 
+				$('.box5Runner2ScoreContainer').textillate('stop'); 	
+
+
+			}
+			
+			var box1Ani, box2Ani, box3Ani, box4Ani, box5Ani;
+			var box1AniOut, box2AniOut, box3AniOut, box4AniOut, box5AniOut;
+			var interval;
+			
+			function animateIn(){
+				/* 
+					All animation must be triggered on this part 
+
+				*/
+				box1Ani = box1In();
+				box2Ani = setTimeout(box2In, interval);
+				box3Ani = setTimeout(box3In, interval * 2);
+				box4Ani = setTimeout(box4In, interval * 3);
+				box5Ani = setTimeout(box5In, interval * 4);
+
+				$('#domain1').textillate('in'); 
+				$('#domain1').on('inAnimationEnd.tlt', function () {
+				  $('#domain2').fadeIn();
+				});
+
+			}
+			
+			function animateOut(){
+				/* 
+					All animation must be triggered on this part 
+
+				*/
+				box1AniOut = box1Out();
+				box2AniOut = box2Out();
+				box3AniOut = box3Out();
+				box4AniOut = box4Out();
+				box5AniOut = box5Out();
+				/*box2AniOut = setTimeout(box2Out, interval);
+				box3AniOut = setTimeout(box3Out, interval * 2);
+				box4AniOut = setTimeout(box4Out, interval * 3);
+				box5AniOut = setTimeout(box5Out, interval * 4);
+				*/
+				$('#domain2').fadeOut('slow', function() {
+					$('#domain1').textillate('out'); 
+				});
+			}
+			
+			function box1In(){
+				
+				// ** Fade in picture
+				$("#box1Pic").velocity({opacity : "1"}, {duration : 1000, easing: "easeInOut", queue: false});		
+				
+				$('.box1TopFirstContainer').show(); 
+				$('.box1TopLastContainer').show(); 
+				$('.box1TopScoreContainer').show(); 
+				$('.box1Runner1Container').show(); 
+				$('.box1Runner2Container').show(); 
+				$('.box1Runner1ScoreContainer').show(); 
+				$('.box1Runner2ScoreContainer').show(); 		
+
+				$('.box1TopFirstContainer').textillate('in'); 
+				$('.box1TopLastContainer').textillate('in'); 
+				$('.box1TopScoreContainer').textillate('in'); 
+				$('.box1Runner1Container').textillate('in'); 
+				$('.box1Runner2Container').textillate('in'); 
+				$('.box1Runner1ScoreContainer').textillate('in'); 
+				$('.box1Runner2ScoreContainer').textillate('in'); 				
+				
+			}
+			
+			function box2In(){
+				
+				// ** Fade in picture
+				$("#box2Pic").velocity({opacity : "1"}, {duration : 1000, easing: "easeInOut", queue: false});	
+
+				$('.box2TopFirstContainer').show(); 
+				$('.box2TopLastContainer').show(); 
+				$('.box2TopScoreContainer').show(); 
+				$('.box2Runner1Container').show(); 
+				$('.box2Runner2Container').show(); 
+				$('.box2Runner1ScoreContainer').show(); 
+				$('.box2Runner2ScoreContainer').show(); 		
+			
+
+				$('.box2TopFirstContainer').textillate('in'); 
+				$('.box2TopLastContainer').textillate('in'); 
+				$('.box2TopScoreContainer').textillate('in'); 
+				$('.box2Runner1Container').textillate('in'); 
+				$('.box2Runner2Container').textillate('in'); 
+				$('.box2Runner1ScoreContainer').textillate('in'); 
+				$('.box2Runner2ScoreContainer').textillate('in'); 				
+				
+			}
+			
+			function box3In(){
+				
+				// ** Fade in picture
+				$("#box3Pic").velocity({opacity : "1"}, {duration : 1000, easing: "easeInOut", queue: false});		
+				
+				$('.box3TopFirstContainer').show(); 
+				$('.box3TopLastContainer').show(); 
+				$('.box3TopScoreContainer').show(); 
+				$('.box3Runner1Container').show(); 
+				$('.box3Runner2Container').show(); 
+				$('.box3Runner1ScoreContainer').show(); 
+				$('.box3Runner2ScoreContainer').show(); 		
+
+				$('.box3TopFirstContainer').textillate('in'); 
+				$('.box3TopLastContainer').textillate('in'); 
+				$('.box3Runner1Container').textillate('in'); 
+				$('.box3TopScoreContainer').textillate('in'); 
+				$('.box3Runner2Container').textillate('in'); 
+				$('.box3Runner1ScoreContainer').textillate('in'); 
+				$('.box3Runner2ScoreContainer').textillate('in'); 				
+				
+			}
+			
+			function box4In(){
+				
+				// ** Fade in picture
+				$("#box4Pic").velocity({opacity : "1"}, {duration : 1000, easing: "easeInOut", queue: false});		
+				
+				$('.box4TopFirstContainer').show(); 
+				$('.box4TopLastContainer').show(); 
+				$('.box4TopScoreContainer').show(); 
+				$('.box4Runner1Container').show(); 
+				$('.box4Runner2Container').show(); 
+				$('.box4Runner1ScoreContainer').show(); 
+				$('.box4Runner2ScoreContainer').show(); 		
+
+				$('.box4TopFirstContainer').textillate('in'); 
+				$('.box4TopLastContainer').textillate('in'); 
+				$('.box4TopScoreContainer').textillate('in'); 
+				$('.box4Runner1Container').textillate('in'); 
+				$('.box4Runner2Container').textillate('in'); 
+				$('.box4Runner1ScoreContainer').textillate('in'); 
+				$('.box4Runner2ScoreContainer').textillate('in'); 				
+				
+			}
+			
+			function box5In(){
+				
+				// ** Fade in picture
+				$("#box5Pic").velocity({opacity : "1"}, {duration : 1000, easing: "easeInOut", queue: false});		
+				
+				$('.box5TopFirstContainer').show(); 
+				$('.box5TopLastContainer').show(); 
+				$('.box5TopScoreContainer').show(); 
+				$('.box5Runner1Container').show(); 
+				$('.box5Runner2Container').show(); 
+				$('.box5Runner1ScoreContainer').show(); 
+				$('.box5Runner2ScoreContainer').show(); 		
+
+				$('.box5TopFirstContainer').textillate('in'); 
+				$('.box5TopLastContainer').textillate('in');
+				$('.box5TopScoreContainer').textillate('in'); 				
+				$('.box5Runner1Container').textillate('in'); 
+				$('.box5Runner2Container').textillate('in'); 
+				$('.box5Runner1ScoreContainer').textillate('in'); 
+				$('.box5Runner2ScoreContainer').textillate('in'); 				
+				
+			}
+			
+			function box1Out(){
+				
+				// ** Fade in picture
+				$("#box1Pic").velocity({opacity : "0"}, {duration : 1000, easing: "easeInOut", queue: false});	
+
+				$('.box1TopFirstContainer').textillate('out'); 
+				$('.box1TopLastContainer').textillate('out'); 
+				$('.box1TopScoreContainer').textillate('out'); 
+				$('.box1Runner1Container').textillate('out'); 
+				$('.box1Runner2Container').textillate('out'); 
+				$('.box1Runner1ScoreContainer').textillate('out'); 
+				$('.box1Runner2ScoreContainer').textillate('out'); 				
+				
+			}
+			
+			function box2Out(){
+				
+				// ** Fade in picture
+				$("#box2Pic").velocity({opacity : "0"}, {duration : 1000, easing: "easeInOut", queue: false});		
+
+				$('.box2TopFirstContainer').textillate('out'); 
+				$('.box2TopLastContainer').textillate('out'); 
+				$('.box2TopScoreContainer').textillate('out'); 
+				$('.box2Runner1Container').textillate('out'); 
+				$('.box2Runner2Container').textillate('out'); 
+				$('.box2Runner1ScoreContainer').textillate('out'); 
+				$('.box2Runner2ScoreContainer').textillate('out'); 				
+				
+			}
+			
+			function box3Out(){
+				
+				// ** Fade in picture
+				$("#box3Pic").velocity({opacity : "0"}, {duration : 1000, easing: "easeInOut", queue: false});		
+
+				$('.box3TopFirstContainer').textillate('out'); 
+				$('.box3TopLastContainer').textillate('out'); 
+				$('.box3TopScoreContainer').textillate('out'); 
+				$('.box3Runner1Container').textillate('out'); 
+				$('.box3Runner2Container').textillate('out'); 
+				$('.box3Runner1ScoreContainer').textillate('out'); 
+				$('.box3Runner2ScoreContainer').textillate('out'); 				
+				
+			}
+			
+			function box4Out(){
+				
+				// ** Fade in picture
+				$("#box4Pic").velocity({opacity : "0"}, {duration : 1000, easing: "easeInOut", queue: false});		
+
+				$('.box4TopFirstContainer').textillate('out'); 
+				$('.box4TopLastContainer').textillate('out'); 
+				$('.box4TopScoreContainer').textillate('out'); 
+				$('.box4Runner1Container').textillate('out'); 
+				$('.box4Runner2Container').textillate('out'); 
+				$('.box4Runner1ScoreContainer').textillate('out'); 
+				$('.box4Runner2ScoreContainer').textillate('out'); 				
+				
+			}
+			
+			function box5Out(){
+				
+				// ** Fade in picture
+				$("#box5Pic").velocity({opacity : "0"}, {duration : 1000, easing: "easeInOut", queue: false});
+
+				$('.box5TopFirstContainer').textillate('out'); 
+				$('.box5TopLastContainer').textillate('out'); 
+				$('.box5TopScoreContainer').textillate('out'); 
+				$('.box5Runner1Container').textillate('out'); 
+				$('.box5Runner2Container').textillate('out'); 
+				$('.box5Runner1ScoreContainer').textillate('out'); 
+				$('.box5Runner2ScoreContainer').textillate('out'); 		
+		
+			}
+			
+			
+			
+			
+
+			
+			function bubbles1(){
+						$('#bubbles1').velocity({translateY : "1100px"}, {duration : 0});
+						$('#bubbles1').velocity({translateY : "-=1200px"}, {duration : 5000, easing: "linear", complete: function() { bubbles1();  }  });					
+			}
+			
+			function bubbles2(){
+						$('#bubbles2').velocity({translateY : "1100px"}, {duration : 0});
+						$('#bubbles2').velocity({translateY : "-=1200px"}, {duration : 3000, easing: "linear", complete: function() { bubbles2();  }  });					
+			}
+			
+			function bubbles3(){
+						$('#bubbles3').velocity({translateY : "1100px"}, {duration : 0});
+						$('#bubbles3').velocity({translateY : "-=1200px"}, {duration : 6000, easing: "linear", complete: function() { bubbles3();  }  });					
+			}
+			
+			function bubbles4(){
+						$('#bubbles4').velocity({translateY : "1100px"}, {duration : 0});
+						$('#bubbles4').velocity({translateY : "-=1200px"}, {duration : 5500, easing: "linear", complete: function() { bubbles4();  }  });					
+			}
+			
+			function bubbles5(){
+						$('#bubbles5').velocity({translateY : "1100px"}, {duration : 0});
+						$('#bubbles5').velocity({translateY : "-=1200px"}, {duration : 7000, easing: "linear", complete: function() { bubbles5();  }  });				
+			}
+			
+			function bubbles6(){
+						$('#bubbles6').velocity({translateY : "1100px"}, {duration : 0});
+						$('#bubbles6').velocity({translateY : "-=1200px"}, {duration : 6000, easing: "linear", complete: function() { bubbles6();  }  });				
+			}
+			
+			function bubbles7(){
+						$('#bubbles7').velocity({translateY : "1100px"}, {duration : 0});
+						$('#bubbles7').velocity({translateY : "-=1200px"}, {duration : 3000, easing: "linear", complete: function() { bubbles7();  }  });					
+			}	
+			
+			function bubbles8(){
+						$('#bubbles8').velocity({translateY : "1100px"}, {duration : 0});
+						$('#bubbles8').velocity({translateY : "-=1200px"}, {duration : 3500, easing: "linear", complete: function() { bubbles8();  }  });				
+			}
+			
+			function bubbles9(){
+						$('#bubbles9').velocity({translateY : "1100px"}, {duration : 0});
+						$('#bubbles9').velocity({translateY : "-=1200px"}, {duration : 4500, easing: "linear", complete: function() { bubbles9();  }  });					
+			}
+			
+			function bubbles10(){
+						$('#bubbles10').velocity({translateY : "1100px"}, {duration : 0});
+						$('#bubbles10').velocity({translateY : "-=1200px"}, {duration : 8000, easing: "linear", complete: function() { bubbles10(); logol3l(); }  });					
+			}
+			function logol3l(){
+						$("#l3l").velocity({rotateY : "360deg"}, {duration : 2000, easing: "easeInOut", complete: function() { logol3ly();} });					
+			}
+			
+			function logol3ly(){
+						$("#l3l").velocity({rotateY : "0deg"}, {duration : 0, easing: "easeInOut", complete: function() { } });					
+			}
+
+			/************************************************** Animations **********************************************************/
+			
+			
+		
+			
+			
+			
+			function getData(){
+		
+							
+				/*
+					This should be coded in backend.
+					Backend will write the data from database to javascript variables (array).
+					These variables will be used on refresh function.
+					
+					Ex. var maxTeams = php;
+					Ex. var maxTeams = 5;
+
+				*/
+				
+				teamCount = 3;
+				domain = ["Accounting Team","Human Resources","Sales Team"];
+				
+				
+								
+				// *** Box 1 ** Story Points ***
+				box1TopFirst = ["Emmanuel","Leia","Giovanny"];
+				box1TopLast = ["Mcpherson","Tanner","Fritz"];
+				box1TopScore = ["9","8","10"];
+				box1Runner1 = ["Jaliyah","Mckayla","Matthew"];
+				box1Runner1Score = ["7","6","7"];
+				box1Runner2 = ["Dwayne","Lyric","Jason"];
+				box1Runner2Score = ["3","2","0"];
+				box1Pic = ["url(avatars/box1_1.png)","url(avatars/box1_2.png)","url(avatars/box1_3.png)"];
+				box1PicWidth = ["23.478260869565vw","23.478260869565vw","23.478260869565vw"];
+				box1PicHeight = ["23.478260869565vw","23.478260869565vw","23.478260869565vw"];
+				
+								
+				
+				// *** Box 2 ** Cases ***
+				box2TopFirst = ["Arjun","Ryan","Edward"];
+				box2TopLast = ["Michael","Church","Edward "];
+				box2TopScore = ["7","8","6"];
+				box2Runner1 = ["Eugene","Martin","Haylee"];
+				box2Runner1Score = ["6","7","5"];
+				box2Runner2 = ["Alia","Jamarcus","Chad"];
+				box2Runner2Score = ["1","2","3"];
+				box2Pic = ["url(avatars/box2_1.png)","url(avatars/box2_2.png)","url(avatars/box2_3.png)"];
+				box2PicWidth = ["23.478260869565vw","23.478260869565vw","23.478260869565vw"];
+				box2PicHeight = ["23.478260869565vw","23.478260869565vw","23.478260869565vw"];
+				
+								
+				// *** Box 3 ** Expertise ***
+				box3TopFirst = ["Yasmine","Jay","Leyla"];
+				box3TopLast = ["Murray","Decker","Hendricks"];
+				box3TopScore = ["4","5","3"];
+				box3Runner1 = ["Marissa","Libby","Miriam"];
+				box3Runner1Score = ["3","2","3"];
+				box3Runner2 = ["Natalee","Kelsey","Luciano "];
+				box3Runner2Score = ["1","2","1"];
+				box3Pic = ["url(avatars/box3_1.png)","url(avatars/box3_2.png)","url(avatars/box3_3.png)"];
+				box3PicWidth = ["23.478260869565vw","23.478260869565vw","23.478260869565vw"];
+				box3PicHeight = ["23.478260869565vw","23.478260869565vw","23.478260869565vw"];
+				
+								
+				// *** Box 4 ** Assist ***
+				
+				box4TopFirst = ["Taliyah","Jimmy","Kendal"];
+				box4TopLast = ["Webster","Buckley","Mendoza"];
+				box4TopScore = ["9","9","8"];
+				box4Runner1 = ["Madilynn","Davian","Daniela"];
+				box4Runner1Score = ["5","6","5"];
+				box4Runner2 = ["Eliana","Nikolai","Elian"];
+				box4Runner2Score = ["1","2","1"];
+				box4Pic = ["url(avatars/box4_1.png)","url(avatars/box4_2.png)","url(avatars/box4_3.png)"];
+				box4PicWidth = ["23.478260869565vw","23.478260869565vw","23.478260869565vw"];
+				box4PicHeight = ["23.478260869565vw","23.478260869565vw","23.478260869565vw"];
+				
+								
+				// *** Box 5 ** Accuracy ***
+				
+				box5TopFirst = ["Michael","Kira","Rudy"];
+				box5TopLast = ["Cannon","Sparks","Bryant"];
+				box5TopScore = ["10","10","10"];
+				box5Runner1 = ["Charlie","Cooper","Mays"];
+				box5Runner1Score = ["7","8","7"];
+				box5Runner2 = ["Mills","Wood","Paul"];
+				box5Runner2Score = ["3","4","6"];
+				box5Pic = ["url(avatars/box5_1.png)","url(avatars/box5_2.png)","url(avatars/box5_3.png)"];
+				box5PicWidth = ["23.478260869565vw","23.478260869565vw","23.478260869565vw"];
+				box5PicHeight = ["23.478260869565vw","23.478260869565vw","23.478260869565vw"];
+
+			}
+			
+			/*** AUTOREFRESH ****/
+			var timeout = setTimeout("location.reload(true);",600000);
+			function resetTimeout() {
+			clearTimeout(timeout);
+				timeout = setTimeout("location.reload(true);",600000);
+			}
+			
+	    </script>
+</body>
+</html>
